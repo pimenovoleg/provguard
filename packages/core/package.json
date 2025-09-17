@@ -1,0 +1,29 @@
+{
+  "name": "@provguard/core",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "@provguard/source": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "dependencies": {
+    "@sigstore/bundle": "^2.3.2",
+    "npm-registry-fetch": "^19.0.0",
+    "semver": "^7.6.3",
+    "sigstore": "^2.3.1",
+    "tslib": "^2.3.0"
+  },
+  "devDependencies": {
+    "@types/semver": "^7.6.0",
+    "@types/npm-registry-fetch": "^8.0.8"
+  }
+}
